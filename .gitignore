@@ -1,0 +1,42 @@
+# OS-Specific junk.
+.DS_Store
+Thumbs.db
+
+# IntelliJ
+/MasterPassword/Java/.idea
+/.idea/*
+!/.idea/encodings.xml
+!/.idea/inspectionProfiles
+!/.idea/projectCodeStyle.xml
+!/.idea/validation.xml
+*.iml
+/*.ipr
+/*.iws
+
+# Xcode IDE
+xcuserdata/
+/DerivedData/
+
+# Generated
+MasterPassword/Resources/Media/Images.xcassets/
+
+# Media
+Press/Background.png
+Press/Front-Page.png
+Press/MasterPassword_PressKit/MasterPassword_pressrelease_*.pdf
+
+# IPA
+/sendipa/*
+!/sendipa/sendipa.conf
+
+# C
+MasterPassword/C/VERSION
+MasterPassword/C/*.o
+MasterPassword/C/mpw-*.tar.gz
+MasterPassword/C/mpw
+MasterPassword/C/mpw-bench
+MasterPassword/C/mpw-tests
+MasterPassword/C/lib/*/.unpacked
+MasterPassword/C/lib/*/.patched
+MasterPassword/C/lib/*/src
+MasterPassword/C/lib/include
