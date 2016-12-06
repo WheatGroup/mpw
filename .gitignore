@@ -40,3 +40,17 @@ MasterPassword/C/lib/*/.unpacked
 MasterPassword/C/lib/*/.patched
 MasterPassword/C/lib/*/src
 MasterPassword/C/lib/include
+
+*.o
+*.pdb
+*.idb
+*.enc
+*.enc
+*.good
+*.sh
+*.VC.opendb
+*.VC.db
+*.log
+*.lastbuildstate
+*.tlog
+*.dirstamp

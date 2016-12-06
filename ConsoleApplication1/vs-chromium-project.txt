@@ -1,0 +1,13 @@
+[SourceExplorer.ignore]
+.git/
+.svn/
+*.suo
+*.csproj
+*.vcxproj
+[SearchableFiles.ignore]
+Binaries/
+obj/
+Debug/
+Release/
+[SearchableFiles.include]
+*
