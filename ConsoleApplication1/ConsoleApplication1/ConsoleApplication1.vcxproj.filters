@@ -24,27 +24,6 @@
     <ClCompile Include="..\mpw-util.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\scrypt-src\lib\crypto\crypto_scrypt-ref.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\scrypt-src\lib\crypto\crypto_scrypt.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\scrypt-src\lib\crypto\crypto_scrypt_smix.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\scrypt-src\lib\crypto\crypto_scrypt_smix_sse2.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\scrypt-src\lib\scryptenc\scryptenc.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\scrypt-src\lib\scryptenc\scryptenc_cpuperf.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\scrypt-src\lib\util\memlimit.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\mpw-algorithm.h">
@@ -55,24 +34,6 @@
     </ClInclude>
     <ClInclude Include="..\mpw-types.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\scrypt-src\lib\crypto\crypto_scrypt.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\scrypt-src\lib\crypto\crypto_scrypt_smix.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\scrypt-src\lib\crypto\crypto_scrypt_smix_sse2.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\scrypt-src\lib\scryptenc\scryptenc.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\scrypt-src\lib\scryptenc\scryptenc_cpuperf.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\scrypt-src\lib\util\memlimit.h">
-      <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

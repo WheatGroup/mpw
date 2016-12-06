@@ -22,24 +22,11 @@
     <ClCompile Include="..\mpw-algorithm.cc" />
     <ClCompile Include="..\mpw-types.cc" />
     <ClCompile Include="..\mpw-util.cc" />
-    <ClCompile Include="..\scrypt-src\lib\crypto\crypto_scrypt-ref.c" />
-    <ClCompile Include="..\scrypt-src\lib\crypto\crypto_scrypt.c" />
-    <ClCompile Include="..\scrypt-src\lib\crypto\crypto_scrypt_smix.c" />
-    <ClCompile Include="..\scrypt-src\lib\crypto\crypto_scrypt_smix_sse2.c" />
-    <ClCompile Include="..\scrypt-src\lib\scryptenc\scryptenc.c" />
-    <ClCompile Include="..\scrypt-src\lib\scryptenc\scryptenc_cpuperf.c" />
-    <ClCompile Include="..\scrypt-src\lib\util\memlimit.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\mpw-algorithm.h" />
     <ClInclude Include="..\mpw-types.h" />
     <ClInclude Include="..\mpw-util.h" />
-    <ClInclude Include="..\scrypt-src\lib\crypto\crypto_scrypt.h" />
-    <ClInclude Include="..\scrypt-src\lib\crypto\crypto_scrypt_smix.h" />
-    <ClInclude Include="..\scrypt-src\lib\crypto\crypto_scrypt_smix_sse2.h" />
-    <ClInclude Include="..\scrypt-src\lib\scryptenc\scryptenc.h" />
-    <ClInclude Include="..\scrypt-src\lib\scryptenc\scryptenc_cpuperf.h" />
-    <ClInclude Include="..\scrypt-src\lib\util\memlimit.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{9F5C41E7-9A4D-47B2-84AF-474CE38B2566}</ProjectGuid>
