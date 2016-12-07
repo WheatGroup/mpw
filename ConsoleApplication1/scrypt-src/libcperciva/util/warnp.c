@@ -36,7 +36,11 @@ warnp_setprogname(const char * progname)
 			p = progname + 1;
 
 	/* Copy the name string. */
+#ifndef _WIN32
 	name = strdup(p);
+#else
+	name = _strdup(p);
+#endif
 
 	/* If we haven't already done so, register our exit handler. */
 	if (initialized == 0) {

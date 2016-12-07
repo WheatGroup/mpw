@@ -2,11 +2,11 @@
 #include <fcntl.h>
 #include <limits.h>
 #include <stdint.h>
-#include <unistd.h>
 
 #include "warnp.h"
 
 #include "entropy.h"
+#include <windows.h>
 
 /**
  * XXX Portability
@@ -21,57 +21,26 @@
  * Fill the given buffer with random bytes provided by the operating system.
  */
 int
-entropy_read(uint8_t * buf, size_t buflen)
+entropy_read(uint8_t * buf, size_t len)
 {
-	int fd;
-	ssize_t lenread;
+	HCRYPTPROV provider;
+	unsigned __int64 pentium_tsc[1];
+	unsigned int i;
+	int result = 0;
 
-	/* Sanity-check the buffer size. */
-	if (buflen > SSIZE_MAX) {
-		warn0("Programmer error: "
-		    "Trying to read insane amount of random data: %zu",
-		    buflen);
-		goto err0;
+
+	if (CryptAcquireContext(&provider, NULL, NULL, PROV_RSA_FULL, CRYPT_VERIFYCONTEXT | CRYPT_SILENT))
+	{
+		result = CryptGenRandom(provider, len, buf);
+		CryptReleaseContext(provider, 0);
+		if (result)
+			return len;
 	}
 
-	/* Open /dev/urandom. */
-	if ((fd = open("/dev/urandom", O_RDONLY)) == -1) {
-		warnp("open(/dev/urandom)");
-		goto err0;
-	}
+	QueryPerformanceCounter((LARGE_INTEGER *)pentium_tsc);
 
-	/* Read bytes until we have filled the buffer. */
-	while (buflen > 0) {
-		if ((lenread = read(fd, buf, buflen)) == -1) {
-			warnp("read(/dev/urandom)");
-			goto err1;
-		}
+	for (i = 0; i < 8 && i < len; ++i)
+		buf[i] = ((unsigned char*)pentium_tsc)[i];
 
-		/* The random device should never EOF. */
-		if (lenread == 0) {
-			warn0("EOF on /dev/urandom?");
-			goto err1;
-		}
-
-		/* We've filled a portion of the buffer. */
-		buf += (size_t)lenread;
-		buflen -= (size_t)lenread;
-	}
-
-	/* Close the device. */
-	while (close(fd) == -1) {
-		if (errno != EINTR) {
-			warnp("close(/dev/urandom)");
-			goto err0;
-		}
-	}
-
-	/* Success! */
-	return (0);
-
-err1:
-	close(fd);
-err0:
-	/* Failure! */
-	return (-1);
+	return i;
 }

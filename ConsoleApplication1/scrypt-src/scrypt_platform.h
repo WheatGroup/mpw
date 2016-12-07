@@ -1,6 +1,7 @@
 #ifndef _SCRYPT_PLATFORM_H_
 #define	_SCRYPT_PLATFORM_H_
 
+#define HAVE_CONFIG_H
 #if defined(CONFIG_H_FILE)
 #include CONFIG_H_FILE
 #elif defined(HAVE_CONFIG_H)
