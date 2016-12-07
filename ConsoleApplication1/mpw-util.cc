@@ -16,8 +16,8 @@
 #include <term.h>
 #endif
 
-#include <scrypt/sha256.h>
-#include <scrypt/crypto_scrypt.h>
+#include <crypto_scrypt.h>
+#include <sha256.h>
 
 #include "mpw-util.h"
 

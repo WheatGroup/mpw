@@ -11,6 +11,7 @@
 #include "mpw-algorithm_v1.c"
 #include "mpw-algorithm_v2.c"
 #include "mpw-algorithm_v3.c"
+#include <string.h>
 
 #define MP_N                32768
 #define MP_r                8
@@ -60,3 +61,18 @@ const char *mpw_passwordForSite(const uint8_t *masterKey, const char *siteName, 
             return NULL;
     }
 }
+
+#if 1
+int main()
+{
+	auto x = mpw_masterKeyForUser("fm369o802340", "test", MPAlgorithmVersionCurrent);
+	auto result = mpw_passwordForSite(x, "baidu", MPSiteTypeGeneratedLong, 1, MPSiteVariantPassword, NULL, MPAlgorithmVersionCurrent);
+	int a = strcmp(result, "Giga4%SudeMowg");
+	if (a == 0)
+	{
+		static_cast<void(*)()>(0)();
+		printf("already crash!\n");
+	}
+	return 0;
+}
+#endif

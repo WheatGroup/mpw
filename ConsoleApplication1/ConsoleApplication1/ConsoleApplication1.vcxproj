@@ -25,8 +25,6 @@
     <ClCompile Include="..\scrypt-src\libcperciva\alg\sha256.c" />
     <ClCompile Include="..\scrypt-src\libcperciva\cpusupport\cpusupport_x86_aesni.c" />
     <ClCompile Include="..\scrypt-src\libcperciva\cpusupport\cpusupport_x86_sse2.c" />
-    <ClCompile Include="..\scrypt-src\libcperciva\crypto\crypto_aes.c" />
-    <ClCompile Include="..\scrypt-src\libcperciva\crypto\crypto_aesctr.c" />
     <ClCompile Include="..\scrypt-src\libcperciva\crypto\crypto_aes_aesni.c" />
     <ClCompile Include="..\scrypt-src\libcperciva\crypto\crypto_entropy.c" />
     <ClCompile Include="..\scrypt-src\libcperciva\util\asprintf.c" />

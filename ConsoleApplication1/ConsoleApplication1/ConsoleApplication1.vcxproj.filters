@@ -27,9 +27,6 @@
     <ClCompile Include="..\mpw-util.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\scrypt-src\lib\crypto\crypto_scrypt.c">
-      <Filter>scrypt</Filter>
-    </ClCompile>
     <ClCompile Include="..\scrypt-src\lib\crypto\crypto_scrypt_smix.c">
       <Filter>scrypt</Filter>
     </ClCompile>
@@ -45,13 +42,7 @@
     <ClCompile Include="..\scrypt-src\libcperciva\alg\sha256.c">
       <Filter>scrypt</Filter>
     </ClCompile>
-    <ClCompile Include="..\scrypt-src\libcperciva\crypto\crypto_aesctr.c">
-      <Filter>scrypt</Filter>
-    </ClCompile>
     <ClCompile Include="..\scrypt-src\libcperciva\crypto\crypto_entropy.c">
-      <Filter>scrypt</Filter>
-    </ClCompile>
-    <ClCompile Include="..\scrypt-src\libcperciva\crypto\crypto_aes.c">
       <Filter>scrypt</Filter>
     </ClCompile>
     <ClCompile Include="..\scrypt-src\libcperciva\crypto\crypto_aes_aesni.c">
@@ -73,6 +64,9 @@
       <Filter>scrypt</Filter>
     </ClCompile>
     <ClCompile Include="..\scrypt-src\libcperciva\util\entropy.c">
+      <Filter>scrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\scrypt-src\lib\crypto\crypto_scrypt.c">
       <Filter>scrypt</Filter>
     </ClCompile>
   </ItemGroup>

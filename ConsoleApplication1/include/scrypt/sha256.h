@@ -19,6 +19,9 @@
 #define HMAC_SHA256_Buf libcperciva_HMAC_SHA256_Buf
 #define HMAC_SHA256_CTX libcperciva_HMAC_SHA256_CTX
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 /* Context structure for SHA256 operations. */
 typedef struct {
 	uint32_t state[8];
@@ -92,4 +95,7 @@ void HMAC_SHA256_Buf(const void *, size_t, const void *, size_t, uint8_t[32]);
 void PBKDF2_SHA256(const uint8_t *, size_t, const uint8_t *, size_t,
     uint64_t, uint8_t *, size_t);
 
+#ifdef __cplusplus
+}
+#endif
 #endif /* !_SHA256_H_ */
