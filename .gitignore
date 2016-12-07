@@ -54,3 +54,4 @@ MasterPassword/C/lib/include
 *.lastbuildstate
 *.tlog
 *.dirstamp
+*.obj
