@@ -27,6 +27,54 @@
     <ClCompile Include="..\mpw-util.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\scrypt-src\lib\crypto\crypto_scrypt.c">
+      <Filter>scrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\scrypt-src\lib\crypto\crypto_scrypt_smix.c">
+      <Filter>scrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\scrypt-src\lib\crypto\crypto_scrypt_smix_sse2.c">
+      <Filter>scrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\scrypt-src\libcperciva\cpusupport\cpusupport_x86_aesni.c">
+      <Filter>scrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\scrypt-src\libcperciva\cpusupport\cpusupport_x86_sse2.c">
+      <Filter>scrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\scrypt-src\libcperciva\alg\sha256.c">
+      <Filter>scrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\scrypt-src\libcperciva\crypto\crypto_aesctr.c">
+      <Filter>scrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\scrypt-src\libcperciva\crypto\crypto_entropy.c">
+      <Filter>scrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\scrypt-src\libcperciva\crypto\crypto_aes.c">
+      <Filter>scrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\scrypt-src\libcperciva\crypto\crypto_aes_aesni.c">
+      <Filter>scrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\scrypt-src\libcperciva\util\warnp.c">
+      <Filter>scrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\scrypt-src\libcperciva\util\asprintf.c">
+      <Filter>scrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\scrypt-src\libcperciva\util\getopt.c">
+      <Filter>scrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\scrypt-src\libcperciva\util\humansize.c">
+      <Filter>scrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\scrypt-src\libcperciva\util\insecure_memzero.c">
+      <Filter>scrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\scrypt-src\libcperciva\util\entropy.c">
+      <Filter>scrypt</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\mpw-algorithm.h">
