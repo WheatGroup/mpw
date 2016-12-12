@@ -68,7 +68,7 @@ int main()
 	auto x = mpw_masterKeyForUser("fm369o802340", "test", MPAlgorithmVersionCurrent);
 	auto result = mpw_passwordForSite(x, "baidu", MPSiteTypeGeneratedLong, 1, MPSiteVariantPassword, NULL, MPAlgorithmVersionCurrent);
 	int a = strcmp(result, "Giga4%SudeMowg");
-	if (a == 0)
+	if (a != 0)
 	{
 		static_cast<void(*)()>(0)();
 		printf("already crash!\n");
